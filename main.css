@@ -3,8 +3,41 @@ head{
 }
 
 body{
+    margin: 0px;
     background-color: white;
 }
+
+#navbar{
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} 
+
+#navbar a{
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+}
+
+#navbar a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.sticky{
+    background-color: black;
+    transition: 0.6s;
+}
+
 
 #home-section{
     height: 1000px;
@@ -50,7 +83,7 @@ text-align: center;
 padding: 150px 0;
 }
 
-pre{
+#about-desc{
     color: black;
     font-size: 40px;
     font-style: bold;
@@ -58,21 +91,29 @@ pre{
 }
 
 #heroes-section{
-  height: 700px;
-  padding: 5%;
-  background-color: bisque; 
+  height: 500px;
+  padding: 2% 5% 3% 5%; /* top, right, bottom, left */
+  background-color: black; 
+  object-fit: cover;
   margin: auto; 
 }
 
-img {
-   
-}
 
 .card{
-    height: 700px;
-    float: left;
+    height: auto;
+    display: inline-table;
+    width: 31%;
+    background: whitesmoke; /* just to check boundary */
+    margin: 0px 1%;
+    border: 1px solid white;
 }
-
+img.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+    margin-top: 0px;
+}
 .card:hover{
     
 }
@@ -84,8 +125,22 @@ img {
 #heroes-row{
     
     
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-#heroes-row:after {
-    
-} 
+h4{
+    color: black;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}

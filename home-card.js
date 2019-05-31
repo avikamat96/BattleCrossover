@@ -35,8 +35,8 @@ function getHeroById(id) {
             console.log("Hero Name not found");
         });
 }
+let super_id = [70,346,644];
 for (let i = 0; i < 3; i++) {
-    let id = Math.ceil(Math.random() * 731);
-    console.log(id);
+    let id = super_id[i];
     getHeroById(id);
 }

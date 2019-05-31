@@ -7,33 +7,42 @@
     <title>MULTIVERSE BATTLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <script src="home-card.js"></script>
+    <script src="navbar.js"></script>
+
 </head>
 
 <body>
 
+    <header id="navbar">
+        <a href="#home-section">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#heroes-section">Top Heroes</a>
+        
+    </header>
+
     <section id="home-section">
         <div id="home-div">
             <h3>Welcome To Battle Multiverse</h3>
-            <button onclick = "window.location = '#about-section'">GET STARTED</button>
+            <button onclick="window.location = '#about-section'">GET STARTED</button>
         </div>
     </section>
-     
+
     <section id="about-section">
-      <pre>The ultimate crossover of different universes.
-All your favourites heroes from Marvel, Dc and Anime in a single place.
-You can know about them and can also decide which one is the strongest in a battle.
-      </pre>
+        <p id="about-desc">The ultimate crossover of different universes.
+            <br> All your favourites heroes from Marvel, DC and Anime in a single place.
+            <br> You can know about them and can also decide which one is the strongest in a battle.
+        </p>
     </section>
-    
+
     <section id="heroes-section">
         <div id="heroes-row">
 
         </div>
     </section>
-
 </body>
 
 </html>
