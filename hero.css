@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+#bg{
+    position: relative;
+    background-image: url(assets/Images/animevsdcandmarvel.jpg);
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+    height: 100vh;
+    /* position: absolute;     */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+
+#hero-details{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#heroPersonalDetails{
+    position: absolute;
+    background-color: whitesmoke;
+    top: 0;
+    right: 0;
+}
+
+#heroPowerStats{
+    position: absolute;
+    background-color: whitesmoke;
+    bottom: 0;
+    right: 0;
+}

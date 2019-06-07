@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="home-card.js"></script>
     <script src="navbar.js"></script>
-
 </head>
 
 <body>
@@ -21,13 +20,19 @@
         <a href="#home-section">Home</a>
         <a href="#about-section">About</a>
         <a href="#heroes-section">Top Heroes</a>
+        <div class="search-container">
+            <form action="hero.html">
+              <input id="search-text" type="text" placeholder="Search.." name="search">
+              <button id="search-button" type="submit" onclick="setHeroName()">Submit</button>
+            </form>
+            </div>
         
     </header>
 
     <section id="home-section">
         <div id="home-div">
             <h3>Welcome To Battle Multiverse</h3>
-            <button onclick="window.location = '#about-section'">GET STARTED</button>
+            <button id="home-button" onclick="window.location = '#about-section'">GET STARTED</button>
         </div>
     </section>
 
@@ -44,5 +49,9 @@
         </div>
     </section>
 </body>
+<footer>
+  
+    Footer work yet to be done.
 
+</footer>
 </html>

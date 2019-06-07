@@ -9,6 +9,8 @@ function getHeroById(id) {
             console.log(heroes);
             var card = document.createElement("div");
             card.className = "card";
+            //future implementation
+          //  card.onclick = fetchHero(heroes.name);
             var img = document.createElement("img");
             img.className = "card-img";
             img.src = heroes.image.url;
@@ -40,3 +42,7 @@ for (let i = 0; i < 3; i++) {
     let id = super_id[i];
     getHeroById(id);
 }
+
+ function setHeroName(){
+   localStorage.setItem("heroName",document.getElementById("search-text").value);
+ }
